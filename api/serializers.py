@@ -17,15 +17,16 @@ class TeamSerializer(serializers.ModelSerializer):
 class MatchSerializer(serializers.ModelSerializer):
     """
     {
-        "winner": 1,
         "team1": 1,
-        "team2": 2
+        "team2": 2,
+        "score1": 1,
+        "score2": 0
     }
     """
 
     class Meta:
         model = Match
-        fields = ('id', 'team1', 'team2', 'winner',)
+        fields = ('id', 'team1', 'team2', 'score1', 'score2')
 
 
 class PlayerSerializer(serializers.ModelSerializer):

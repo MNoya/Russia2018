@@ -23,7 +23,8 @@ class Player(models.Model):
 class Match(models.Model):
     team1 = models.ForeignKey(Team, related_name='team1')
     team2 = models.ForeignKey(Team, related_name='team2')
-    winner = models.ForeignKey(Team, related_name='winner')
+    score1 = models.PositiveIntegerField()
+    score2 = models.PositiveIntegerField()
 
 
 class Lineup(models.Model):

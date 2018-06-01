@@ -54,9 +54,10 @@ Methods: GET, POST
 
 ```
 {
-    "winner": 1,
     "team1": 1,
-    "team2": 2
+    "team2": 2,
+    "score1": 1,
+    "score2": 0
 }
 ```
 Returns match_id
